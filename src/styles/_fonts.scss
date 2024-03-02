@@ -1,0 +1,48 @@
+@use 'colors';
+
+@font-face {
+    font-family: Avenir;
+    src: url(../../assets/fonts/Avenir-Regular.woff2);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Avenir;
+    src: url(../../assets/fonts/Avenir-Bold.woff2);
+    font-weight: 700;
+}
+
+@mixin text($fontSize: 16px){
+    font-size: $fontSize;
+    line-height: $fontSize + 10px;
+    color: colors.$colorTextPrimary;
+}
+
+@mixin title($fontSize: 40px){
+    @include text($fontSize);
+    color: colors.$colorTextSecundary;
+}
+
+.text--small {
+    @include text(12px)
+}
+
+.text {
+    @include text;
+}
+
+.text--big{
+    @include text(24px)
+}
+
+.title--small {
+    @include title(26px)
+}
+
+.title{
+    @include title;
+}
+
+.title--big{
+    @include title(56px)
+}
