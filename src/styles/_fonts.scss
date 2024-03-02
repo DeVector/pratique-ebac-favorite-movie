@@ -24,7 +24,7 @@
 }
 
 .text--small {
-    @include text(12px)
+    @include text(16px)
 }
 
 .text {
@@ -36,7 +36,7 @@
 }
 
 .title--small {
-    @include title(26px)
+    @include title(16px)
 }
 
 .title{

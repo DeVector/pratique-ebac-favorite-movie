@@ -1,0 +1,27 @@
+@use 'colors';
+
+.details{
+
+    padding: 5.6vw;
+    min-height: 80vh;
+    position: relative;
+
+    h2 {
+        border-bottom: 2px solid colors.$colorBorderBottom;
+    }
+
+    h3 {
+        margin-top: 24px;
+    }
+
+    &__content {
+        margin-top: 8px;
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+
+        &__item {
+            margin-right: 18px;
+        }
+    }
+
+}

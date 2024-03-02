@@ -4,9 +4,23 @@
     padding: 5.6vw;
     min-height: 80vh;
     text-align: center;
+    position: relative;
+
+    &__full-img{
+        box-sizing: border-box;
+        width: 100vw;
+        top: 0;
+        left: 0;
+        position: fixed;
+        
+        img {
+            opacity: .7;
+        }
+    }
 
     &__content{
         max-width: 640px;
+        position: relative;
     }
 
     p{

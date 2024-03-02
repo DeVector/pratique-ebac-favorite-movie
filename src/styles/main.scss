@@ -3,10 +3,9 @@
 @use 'colors';
 @use 'hero';
 @use 'button';
+@use 'details';
 
 body{
     background-color: colors.$bgColor;
-    background-image: url('https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/D9578A3A8728595585FA5BCEAD20CDE3334AC8F3B669DF24C2653C2E944F18C6/scale?width=1920');
-    background-size: cover;
 }
 
